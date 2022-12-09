@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "name": "HentaiVN",
+    "author": "vBook",
+<<<<<<< HEAD
+    "version": 10,
+=======
+    "version": 9,
+>>>>>>> 70d09f85401f9fecd71ba973895d9bdf9768d5b2
+    "source": "https://hentaivn.in",
+    "regexp": "(www.)?hentaivn.(net|tv|moe|fun|la|in)/\\d+-[^/]+.html$",
+    "description": "Đọc truyện trên trang HentaiVN",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "comic",
+    "tag": "nsfw"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
