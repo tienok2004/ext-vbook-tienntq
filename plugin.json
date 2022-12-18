@@ -5,16 +5,15 @@
   },
   "data": [
     {
-      "name": "Bạch Ngọc Sách",
-      "author": "vBook",
-      "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/bachngocsach/plugin.zip",
-      "version": 5,
-      "source": "https://bachngocsach.com/reader",
-      "icon": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/bachngocsach/icon.png",
-      "description": "Đọc truyện trên trang bachngocsach.com/reader",
-      "type": "novel",
-      "locale": "vi_VN"
+      "name": "Truyện VN",
+      "author": "tienntq",
+      "path": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/truyenvn/plugin.zip",
+      "version": 12,
+      "type": "comic",
+      "locale": "vi_VN",
+      "source": "https://truyenvnhot.net",
+      "icon": "https://raw.githubusercontent.com/Darkrai9x/ext-vbook-tienntq/main/truyenvn/icon.png",
+      "description": "Đọc truyện trên trang Truyện VN"
     }
-    
   ]
 }
