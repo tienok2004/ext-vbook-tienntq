@@ -4,6 +4,7 @@ function execute(url) {
     url = url.replace("truyenvn.vip", "truyenvnhot.com");
     url = url.replace("truyenvnhot.com", "truyenvnpro.com");
     url = url.replace("truyenvnpro.com", "truyenvnhot.com")
+    url = url.replace("truyenvnhot.com", "truyenvnhot.net")
     var doc = Http.get(url).html();
     doc.select("img[src*='CREDIT-TRUYENVN-FROM-SEPT.jpg']").remove();
     var el = doc.select(".content-text img[loading*='lazy']");
