@@ -1,5 +1,5 @@
 function execute(url) {
-    url = url.replace("mtccv.com", "metruyencv.info");
+    url = url.replace("mtccv.com", "metruyencv.com");
     var browser = Engine.newBrowser();
     browser.setUserAgent(UserAgent.android());
 

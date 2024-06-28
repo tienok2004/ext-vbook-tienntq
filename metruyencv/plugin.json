@@ -2,9 +2,9 @@
   "metadata": {
     "name": "Mê Truyện Chữ",
     "author": "tienntq",
-    "version": 17,
-    "source": "https://metruyencv.info/",
-    "regexp": "(www.)?(metruyenchu|mtccv|metruyencv).info/truyen/[a-zA-Z0-9-]+/?$",
+    "version": 16,
+    "source": "https://metruyencv.com/",
+    "regexp": "(www.)?(metruyenchu|mtccv|metruyencv).com/truyen/[a-zA-Z0-9-]+/?$",
     "description": "Đọc truyện trên trang Mê Truyện Chữ",
     "locale": "vi_VN",
     "language": "javascript"

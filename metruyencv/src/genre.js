@@ -7,7 +7,7 @@ function execute() {
             var e = el.get(i);
             genre.push({
                 title: e.text(),
-                input: "https://metruyencv.info" + e.attr("href"),
+                input: "https://metruyencv.com" + e.attr("href"),
                 script: "gen.js"
             });
         }
