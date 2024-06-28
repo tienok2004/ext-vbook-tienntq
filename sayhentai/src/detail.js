@@ -1,5 +1,5 @@
 function execute(url) {
-    url = url.replace ("sayhentai.me","sayhentai.fun")
+    url = url.replace ("sayhentai.me","sayhentai.life")
     let response = fetch(url);
     if (response.ok) {
         let doc = response.html();
@@ -9,7 +9,7 @@ function execute(url) {
             author: doc.select(".author-content").first().text(),
             description: doc.select(".description-summary p").html(),
             detail: doc.select(".summary-content").first().text()+'<br>Author : '+doc.select(".author-content").text(),
-            host: "https://sayhentai.fun",
+            host: "https://sayhentai.life",
             ongoing: doc.select(".post-content_item").text().indexOf("OnGoing") != -1
         });
     }
