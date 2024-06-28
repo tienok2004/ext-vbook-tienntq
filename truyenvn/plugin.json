@@ -2,9 +2,9 @@
   "metadata": {
     "name": "Truyện VN",
     "author": "tienntq",
-    "version": 12,
-    "source": "https://truyenvnhot.net",
-    "regexp": "(www.)?truyenvn(hot|pro)?.(com|tv|vip|net)/[^/]+/?$",
+    "version": 13,
+    "source": "https://truyenvnhay.com",
+    "regexp": "(www.)?truyenvn(hot|pro|hay)?.(com|tv|vip|net)/[^/]+/?$",
     "description": "Đọc truyện trên trang Truyện VN",
     "locale": "vi_VN",
     "language": "javascript",
