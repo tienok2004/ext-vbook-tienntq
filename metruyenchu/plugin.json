@@ -1,9 +1,9 @@
 {
   "metadata": {
     "name": "Mê Truyện Chữ",
-    "author": "tienntq",
+    "author": "vBook",
     "version": 16,
-    "source": "https://metruyencv.com/",
+    "source": "https://metruyenchu.com",
     "regexp": "(www.)?(metruyenchu|mtccv|metruyencv).com/truyen/[a-zA-Z0-9-]+/?$",
     "description": "Đọc truyện trên trang Mê Truyện Chữ",
     "locale": "vi_VN",

@@ -40,13 +40,13 @@
     {
       "name": "Mê truyện cv",
       "author": "tienntq",
-      "path": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/metruyencv/plugin.zip",
+      "path": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/metruyenchu/plugin.zip",
       "version": 16,
       "type": "novel",
       "locale": "vi_VN",
       "source": "https://metruyencv.com/",
-      "icon": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/metruyencv/icon.png",
-      "description": "Đọc truyện trên trang metruyencv.info"
+      "icon": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/metruyenchu/icon.png",
+      "description": "Đọc truyện trên trang metruyencv.com"
     }
   ]
 }

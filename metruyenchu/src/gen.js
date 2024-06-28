@@ -1,12 +1,12 @@
-function execute(key, page) {
+function execute(url, page) {
     if (!page) page = '1';
-    var browser = Engine.newBrowser();
+    let browser = Engine.newBrowser();
     browser.setUserAgent(UserAgent.android());
 
-    browser.block([".*?api.truyen.onl/v2/books/search.*?"]);
+    browser.block([".*?api.truyen.onl/v2/books\\?sort_by.*?"]);
 
-    browser.launchAsync("https://metruyencv.com/truyen/?keyword=" + key + "&page=" + page);
-    browser.waitUrl(".*?api.truyen.onl/v2/books/search.*?", 10000);
+    browser.launchAsync(url + "&page=" + page);
+    browser.waitUrl(".*?api.truyen.onl/v2/books\\?sort_by.*?", 10000);
     browser.close()
 
     var urls = JSON.parse(browser.urls());
@@ -14,7 +14,7 @@ function execute(key, page) {
     var next = "";
     urls.forEach(requestUrl => {
         if (requestUrl.indexOf("api.truyen.onl/v2/books") >= 0) {
-            var response = fetch(requestUrl, {
+            let response = fetch(requestUrl, {
                 headers: {
                     'user-agent': UserAgent.android()
                 }
@@ -26,7 +26,7 @@ function execute(key, page) {
                     link: "/truyen/" + book.slug,
                     description: book.author_name,
                     cover: book['poster']['default'],
-                    host: "https://metruyencv.com"
+                    host: "https://metruyenchu.com"
                 })
             });
         }
