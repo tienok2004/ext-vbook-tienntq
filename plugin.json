@@ -41,10 +41,10 @@
       "name": "Mê truyện cv",
       "author": "tienntq",
       "path": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/metruyencv/plugin.zip",
-      "version": 17,
+      "version": 16,
       "type": "novel",
       "locale": "vi_VN",
-      "source": "https://metruyencv.info/",
+      "source": "https://metruyencv.com/",
       "icon": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/metruyencv/icon.png",
       "description": "Đọc truyện trên trang metruyencv.info"
     }
