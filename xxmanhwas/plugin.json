@@ -2,7 +2,7 @@
   "metadata": {
     "name": "XX Manhwa",
     "author": "Nhocconsr",
-    "version": 1,
+    "version": 2,
     "source": "https://xxmanhwas.net",
     "regexp": "(www.)?xxmanhwas.net/p/story/\\d+/(.+).html",
     "description": "Đọc truyện https://xxmanhwas.net",
