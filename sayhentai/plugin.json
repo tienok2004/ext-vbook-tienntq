@@ -1,10 +1,10 @@
 {
   "metadata": {
     "name": "Say Hentai",
-    "author": "tienntq",
-    "version": 7,
+    "author": "Nhocconsr",
+    "version": 9,
     "source": "https://sayhentai.life",
-    "regexp": "(www.)?sayhentai.life/[^/]+.html$",
+    "regexp": "(www.)?sayhentai.(.*?)/[^/]+.html$",
     "description": "Đọc truyện trên trang Say Hentai",
     "locale": "vi-VN",
     "language": "javascript",

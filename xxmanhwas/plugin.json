@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "XX Manhwa",
+    "author": "Nhocconsr",
+    "version": 2,
+    "source": "https://xxmanhwas.net",
+    "regexp": "(www.)?xxmanhwas.net/p/story/\\d+/(.+).html",
+    "description": "Đọc truyện https://xxmanhwas.net",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
