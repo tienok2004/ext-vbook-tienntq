@@ -1,7 +1,9 @@
 function execute(url){
     let doc = fetch(url).html()
-    Console.log(doc)
-    let ssrc = doc.select('.cur p img').first().attr('data-src') 
+    let ssrc = doc.select('.cur p img').first().attr('data-src')
+    if(!ssrc){
+        return Response.error("Truyện yêu cầu tài khoản!")
+    } 
     let sid = /sid:(\d+)/.exec(doc)[1]
     let cid = /cid:(\d+)/.exec(doc)[1]
     let expire = /expire:(\d+)/.exec(doc)[1]
@@ -18,7 +20,6 @@ function execute(url){
     }
     let checkLogin = doc.select('.top-login-menu').text();
     if (checkLogin.indexOf('Đăng xuất') === -1){
-        Console.log('Chưa đăng nhập')
         const res = fetch(`https://xxmanhwas.net/${ebe_cap}?_wpnonce=e732af2390628a21d8b7500e621b1493c28d9330b415e88f27b8b4e2f9a440a3`, {
             method: 'POST',
             headers : {
@@ -45,14 +46,39 @@ function execute(url){
     let isFree = json.is_free
     let iUrl = `https://${json.media}/${json.src.split('/O')[0]}`
     let imgs = [];
-    doc.select('.cur p img').forEach(it =>{
-        var img = '';
-        if(isFree === 1){
+    if(isFree === 1){
+        doc.select('.cur p img').forEach(it =>{
             var img = "/" + it.attr('data-src')
+            imgs.push(iUrl + img)
+        })
+        return Response.success(imgs)
+    }else{
+        imgs.push(iUrl)
+        let el = doc.select('.cur p img');
+        for (let i = 1;i < el.size(); i++) {
+            var e = el.get(i);
+            let src = e.attr('data-src')
+            let json1 = fetch(`https://xxmanhwas.net/chaps/img`,{
+                method : 'POST',
+                headers : {
+                    'referer': url,
+                    //'x-requested-with': 'XMLHttpRequest'
+                },
+                body : {
+                    "iid" : `_0_${generateID()}`,
+                    "ipoi" :  i + 1,
+                    "sid" : sid,
+                    "cid" : cid,
+                    "expire" : expire,
+                    "token" : token,
+                    "src" : src,
+                }
+            }).json();
+            let simg = `https://${json1.media}/${json1.src.split('/O')[0]}`
+            imgs.push(simg)
         }
-        imgs.push(iUrl + img)
-    })
-    return Response.success(imgs)
+        return Response.success(imgs)
+    }
 }
 function generateID() {
     const chars = '234567abcdefghijklmnopqrstuvwxyz';
