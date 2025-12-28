@@ -2,10 +2,10 @@ function execute(url, page) {
     load('config.js');
     url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, BASE_URL);
     if (!page) page = '1';
-    var browser = Engine.newBrowser() // Khởi tạo browser
-    browser.launch(BASE_URL + url+'/page/'+page, 3000) // Mở trang web với timeout, trả về Document object
-    var doc = browser.html() // Trả về Document object của trang web
-    browser.close() // Đóng browser khi đã xử lý xong
+    // var browser = Engine.newBrowser() // Khởi tạo browser
+    // browser.launch(BASE_URL + url+'/page/'+page, 3000) // Mở trang web với timeout, trả về Document object
+    // var doc = browser.html() // Trả về Document object của trang web
+    // browser.close() // Đóng browser khi đã xử lý xong
     var next = doc.select('.z-pagination').select('span.current + a').text();
     const el = doc.select(".comics-grid .entry")
     const data = [];
