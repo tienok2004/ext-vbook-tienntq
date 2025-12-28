@@ -3,6 +3,7 @@
     "name": "vi-Hentai",
     "author": "B",
     "version": 2,
+    "version": 4,
     "source": "https://vi-hentai.pro/",
     "regexp": "(www.)?vi-hentai*.*?/truyen/[0-9a-z-]+/?$",
     "description": "Đọc truyện trên trang vi-Hentai",
