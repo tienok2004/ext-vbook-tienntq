@@ -12,7 +12,7 @@ function execute(url) {
     //         host: BASE_URL
     //     })
     // }
-    let el = doc.select("ul.overflow-y-auto a");
+    let el = doc.select(".overflow-y-auto.overflow-x-hidden a");
 
     const data = [];
 
