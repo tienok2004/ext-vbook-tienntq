@@ -7,7 +7,7 @@ function execute(url) {
     let doc = browser.html();
     browser.close();
     
-    var els = doc.select("nav + .text-center img.mx-auto");
+    var els = doc.select("ul.overflow-y-auto a");
     var imgs = [];
     els.forEach(el => {
         imgs.push({
