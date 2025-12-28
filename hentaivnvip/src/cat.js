@@ -20,7 +20,7 @@ function execute(url, page) {
                 name: e.select("a[title]").attr("title"),
                 link: e.select("a").attr("href"),
                 cover: url_cover,
-                description:  e.select("a.text-white").first().text() || 'No chapter',
+                description:  e.select(".chapter.font-meta a").first().text() || 'No chapter',
                 host: BASE_URL
             })
         })
