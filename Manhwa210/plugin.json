@@ -2,9 +2,9 @@
   "metadata": {
     "name": "Manhwa210",
     "author": "tienntq",
-    "version": 1,
+    "version": 2,
     "source": "https://manhwa210.com/",
-    "regexp": "(www.)?manhwa210*.*?/truyen/[0-9a-z-]+/?$",
+    "regexp": "(www.)?manhwa210*.*?/manga/[0-9a-z-]+/?$",
     "description": "Đọc truyện trên trang manhwa210",
     "locale": "vi_VN",
     "language": "javascript",
