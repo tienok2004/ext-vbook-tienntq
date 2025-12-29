@@ -7,7 +7,7 @@ function execute(url) {
     let doc = browser.html();
     browser.close();
     
-    var els = doc.select(".reading-content img.mx-auto");
+    var els = doc.select(".reading-content img");
     var imgs = [];
     els.forEach(el => {
         imgs.push({

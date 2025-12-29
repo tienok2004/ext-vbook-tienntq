@@ -1,16 +1,22 @@
 function execute(key, page) {
     load('config.js');
-    url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, BASE_URL);
-    let doc = fetch(BASE_URL + '/truyen-hentai-moi/?q='+key).html()
-    let el = doc.select(".comics-grid .entry")
+    
+    // Gửi request search (BASE_URL phải được định nghĩa trong config.js)
+    let doc = fetch(BASE_URL + '/?s=' + key + '&post_type=wp-manga').html();
+    
+    // Selector cho từng item truyện
+    let el = doc.select(".row.c-tabs-item__content");
+    
     let data = [];
-    el.forEach(e =>data.push({
-            name: e.select("a.name").first().text(),
-            link: e.select("a.name").first().attr("href"),
-            cover: e.select("img").first().attr("src"),
-            description: e.select(".date-time").first().text(),
+    el.forEach(e => {
+        data.push({
+            name: e.select(".post-title h3 a").text(),
+            link: e.select(".post-title h3 a").attr("href"),
+            cover: e.select(".tab-thumb noscript img").attr("src"),
+            description: "Chương mới: " + e.select(".latest-chap .chapter a").text(),
             host: BASE_URL
-        })
-    )
-    return Response.success(data)
+        });
+    });
+    
+    return Response.success(data);
 }
