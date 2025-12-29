@@ -46,7 +46,8 @@
       "locale": "vi_VN",
       "source": "https://vi-hentai.pro/",
       "icon": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/vip-hentai/icon.png",
-      "description": "Đọc truyện trên trang vi-hentai.pro"
+      "description": "Đọc truyện trên trang vi-hentai.pro",
+      "tag": "nsfw"
     },
     {
       "name": "Manhwa210",
@@ -57,7 +58,20 @@
       "locale": "vi_VN",
       "source": "https://manhwa210.com/",
       "icon": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/Manhwa210/icon.png",
-      "description": "Đọc truyện trên trang Manhwa210.com"
+      "description": "Đọc truyện trên trang Manhwa210.com",
+      "tag": "nsfw"
+    },
+    {
+      "name": "damconuong",
+      "author": "tienntq",
+      "path": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/damconuong/plugin.zip",
+      "version": 1,
+      "type": "comic",
+      "locale": "vi_VN",
+      "source": "https://manhwa210.com/",
+      "icon": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/Manhwa210/icon.png",
+      "description": "Đọc truyện trên trang Manhwa210.com",
+      "tag": "nsfw"
     }
   ]
 }

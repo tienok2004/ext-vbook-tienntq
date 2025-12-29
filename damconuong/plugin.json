@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "damconuong",
+    "author": "tienntq",
+    "version": 1,
+    "source": "https://damconuong.onl/",
+    "regexp": "(www.)?damconuong*.*?/truyen/[0-9a-z-]+/?$",
+    "description": "Đọc truyện trên trang damconuong",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "tag": "nsfw",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
