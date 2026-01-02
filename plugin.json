@@ -30,10 +30,10 @@
       "name": "Hentaivnvip",
       "author": "tienntq",
       "path": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/hentaivnvip/plugin.zip",
-      "version": 3,
+      "version": 9,
       "type": "comic",
       "locale": "vi_VN",
-      "source": "https://hentaivnhot.net/",
+      "source": "https://hentaivn.cheap/",
       "icon": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/hentaivnvip/icon.png",
       "description": "Đọc truyện trên trang hentaivnvip"
     },
@@ -71,6 +71,18 @@
       "source": "https://manhwa210.com/",
       "icon": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/Manhwa210/icon.png",
       "description": "Đọc truyện trên trang Manhwa210.com",
+      "tag": "nsfw"
+    },
+    {
+      "name": "doctruyen3q",
+      "author": "tienntq",
+      "path": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/doctruyen3q/plugin.zip",
+      "version": 1,
+      "type": "comic",
+      "locale": "vi_VN",
+      "source": "https://doctruyen3qui19.com",
+      "icon": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/doctruyen3q/icon.png",
+      "description": "Đọc truyện trên trang doctruyen3q.com",
       "tag": "nsfw"
     }
   ]
