@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "name": "vi-Hentai",
-    "author": "B",
-    "version": 4,
-    "source": "https://vi-hentai.pro/",
-    "regexp": "(www.)?vi-hentai*.*?/truyen/[0-9a-z-]+/?$",
-    "description": "Đọc truyện trên trang vi-Hentai",
+    "name": "thienthaitruyen2",
+    "author": "tienntq",
+    "version": 2,
+    "source": "https://thienthaitruyen2.com/",
+    "regexp": "(www.)?thienthaitruyen2*.*?/truyen/[0-9a-z-]+/?$",
+    "description": "Đọc truyện trên trang thienthaitruyen2",
     "locale": "vi_VN",
     "language": "javascript",
     "tag": "nsfw",
