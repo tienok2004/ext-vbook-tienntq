@@ -12,15 +12,27 @@ function execute(url) {
     //         host: BASE_URL
     //     })
     // }
-    let el = doc.select(".overflow-y-auto.overflow-x-hidden a");
+    let el = doc.select("div.chapter-items a");
 
     const data = [];
 
     // 2. Sử dụng vòng lặp (với Jsoup/JavaScript)
     el.forEach((e) => {
+        // Lấy thẻ <a> bên trong item
+        let aTag = e.select("a").first();
+        
+        // 2. Lấy link chương
+        let chapterUrl = aTag.attr("href");
+        if (chapterUrl && !chapterUrl.startsWith("http")) {
+            chapterUrl = BASE_URL + chapterUrl;
+        }
+
+        // 3. Lấy tên chương (nằm trong thẻ p có class text-sm)
+        let chapterName = aTag.select("p.text-sm").text().trim();
+
         data.push({
-            name: e.select(".text-ellipsis").first().text().trim(), // Lấy chữ "Chap X"
-            url: BASE_URL + e.attr("href"),                         // Ghép link
+            name: chapterName, // Ví dụ: "Chương 22"
+            url: chapterUrl,
             host: BASE_URL
         });
     });
