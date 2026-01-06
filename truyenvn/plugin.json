@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "name": "Truyện VN",
+    "name": "Truyện Thiên Thai",
     "author": "tienntq",
-    "version": 13,
-    "source": "https://truyenvnhay.com",
-    "regexp": "(www.)?truyenvn(hot|pro|hay)?.(com|tv|vip|net)/[^/]+/?$",
-    "description": "Đọc truyện trên trang Truyện VN",
+    "version": 1,
+    "source": "https://thienthaitruyen2.com/",
+    "regexp": "(www.)?thienthaitruyen2(hot|pro|hay)?.(com|tv|vip|net)/[^/]+/?$",
+    "description": "Đọc truyện trên trang Truyện Thiên thai",
     "locale": "vi_VN",
     "language": "javascript",
 	"type": "comic"
