@@ -2,7 +2,7 @@
   "metadata": {
     "name": "thienthaitruyen2",
     "author": "tienntq",
-    "version": 2,
+    "version": 3,
     "source": "https://thienthaitruyen2.com/",
     "regexp": "(www.)?thienthaitruyen2*.*?/truyen/[0-9a-z-]+/?$",
     "description": "Đọc truyện trên trang thienthaitruyen2",
