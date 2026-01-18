@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "name": "manhwa18fx",
+    "name": "manga18fx.com",
     "author": "tienntq",
     "version": 1,
-    "source": "https://manhwa18fx.com/",
-    "regexp": "(www.)?manhwa18fx*.*?/manga/[0-9a-z-]+/?$",
-    "description": "Đọc truyện trên trang manhwa18fx",
+    "source": "https://manga18fx.com",
+    "regexp": "(www.)?manga18fx*.*?/manga/[0-9a-z-]+/?$",
+    "description": "Đọc truyện trên trang manga18fx.com",
     "locale": "vi_VN",
     "language": "javascript",
     "tag": "nsfw",
