@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "manhwa18fx",
+    "author": "tienntq",
+    "version": 1,
+    "source": "https://manhwa18fx.com/",
+    "regexp": "(www.)?manhwa18fx*.*?/manga/[0-9a-z-]+/?$",
+    "description": "Đọc truyện trên trang manhwa18fx",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "tag": "nsfw",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

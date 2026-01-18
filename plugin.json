@@ -96,6 +96,18 @@
       "icon": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/thienthaitruyen2/icon.png",
       "description": "Đọc truyện trên trang thienthaitruyen2.com",
       "tag": "nsfw"
+    },
+    {
+      "name": "manhwa18fx",
+      "author": "tienntq",
+      "path": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/manhwa18fx/plugin.zip",
+      "version": 1,
+      "type": "comic",
+      "locale": "vi_VN",
+      "source": "https://manhwa18fx.com/",
+      "icon": "https://raw.githubusercontent.com/tienok2004/ext-vbook-tienntq/main/manhwa18fx/icon.png",
+      "description": "Đọc truyện trên trang manhwa18fx.com",
+      "tag": "nsfw"
     }
   ]
 }
