@@ -2,8 +2,8 @@
   "metadata": {
     "name": "damconuong",
     "author": "tienntq",
-    "version": 1,
-    "source": "https://damconuong.onl/",
+    "version": 2,
+    "source": "https://damconuong.plus/",
     "regexp": "(www.)?damconuong*.*?/truyen/[0-9a-z-]+/?$",
     "description": "Đọc truyện trên trang damconuong",
     "locale": "vi_VN",
