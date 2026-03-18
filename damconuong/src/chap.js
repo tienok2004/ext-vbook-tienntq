@@ -15,7 +15,7 @@ function execute(url) {
     
     els.forEach(el => {
         // Ưu tiên lấy data-src, nếu không có mới lấy src
-        let link = el.attr('data-src') || el.attr('src');
+        let link = (el.attr('data-src') || el.attr('src')).trim();
         
         // Kiểm tra để đảm bảo không lấy nhầm ảnh trống hoặc ảnh loading
         if (link && link.indexOf('loading.gif') === -1) {
